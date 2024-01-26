@@ -4,9 +4,20 @@
   --color-grey: #878ea2;
   --color-black: #000000;
   --color-white: #ffffff;
+
+  --color-light-main-primary-dark-10: #151824;
+  --color-light-main-primary-dark-6: #75777e;
   --color-light-main-primary-dark-4: #a6a7ac;
+  --color-light-main-primary-dark-3: #c7c8ca;
   --color-light-main-primary-dark-2: #e1e1e3;
+  --color-light-main-primary-dark-1: #f9fafc;
+
+  --color-light-main-primary-blue-10: #3d4dff;
+  --color-light-main-primary-blue-8: #6470ff;
 
   //   BORDERS
   --default-border: 1px solid var(--color-light-main-primary-dark-2, #e1e1e3);
+
+  // ELEMENTS
+  --heading-height: 80px;
 }
