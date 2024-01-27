@@ -11,6 +11,7 @@ import SettingIcon from "../../../assets/SettingIcon";
 import UserIcon from "../../../assets/UserIcon";
 import scss from "./sidebar.module.scss";
 import { animated, useSpring } from "@react-spring/web";
+import InfoIcon from "../../../assets/InfoIcon";
 
 interface SideBarItem {
   name: string;
@@ -110,6 +111,11 @@ const Sidebar = () => {
               <item.icon />
             </div>
           ))}
+        </div>
+        <div className={scss.info}>
+          <InfoIcon />
+
+          <span className={scss.version}>1.01</span>
         </div>
       </div>
       {selectedSidebarItem && (

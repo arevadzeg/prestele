@@ -1,3 +1,7 @@
+@import "../../../text-mixins.scss";
+
+$input-width: 300px;
+
 .input {
   display: flex;
   gap: 16px;
@@ -7,5 +11,10 @@
 .textfield {
   border: none;
   outline: none;
-  width: -webkit-fill-available;
+  min-width: $input-width;
+  &::placeholder {
+    color: var(--color-light-main-primary-dark-4);
+  }
+
+  @include text-sm();
 }

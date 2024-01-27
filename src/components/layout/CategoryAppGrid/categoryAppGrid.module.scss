@@ -1,3 +1,5 @@
+@import "../../../text-mixins.scss";
+
 .categoryApp {
   padding: 37px 24px;
 }
@@ -17,6 +19,11 @@
 
 .subTitle {
   color: var(--color-light-main-primary-dark-6);
+  @include text-sm();
+}
+
+.title {
+  @include text-display-xs(500);
 }
 
 .gird {

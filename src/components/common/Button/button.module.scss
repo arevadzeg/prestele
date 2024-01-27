@@ -1,6 +1,10 @@
+@import "../../../text-mixins.scss";
+
 .button {
   padding: 8px 12px;
   display: flex;
   align-items: center;
   gap: 8px;
+  @include text-tn();
+  color: var(--color-light-main-primary-dark-7);
 }

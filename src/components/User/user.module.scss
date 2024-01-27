@@ -1,3 +1,5 @@
+@import "../../text-mixins.scss";
+
 $img-size: 32px;
 
 .info {
@@ -14,10 +16,12 @@ $img-size: 32px;
 
 .name {
   color: var(--color-blue);
+  @include text-sm(500);
 }
 
 .email {
   color: var(--color-grey);
+  @include text-tn();
 }
 
 .img {

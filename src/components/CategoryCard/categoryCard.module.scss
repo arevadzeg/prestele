@@ -1,3 +1,7 @@
+@import "../../text-mixins.scss";
+
+$article-title-background: #f7f7f7;
+
 .cardContainer {
   padding: 40px 24px;
   border-radius: 2px;
@@ -24,6 +28,8 @@
   display: flex;
   gap: 16px;
   align-items: center;
+  color: var(--color-light-main-primary-dark-10);
+  @include text-md(500);
 }
 .iconsWrapper {
   display: flex;
@@ -35,7 +41,7 @@
   display: flex;
   align-items: center;
   width: 80%;
-  background-color: var(--color-light-main-primary-dark-2);
+  background-color: $article-title-background;
   justify-content: space-between;
   margin-bottom: 56px;
 }
@@ -45,6 +51,8 @@
   gap: 24px;
   align-items: center;
   padding-left: 4px;
+  color: var(--color-light-main-primary-dark-7);
+  @include text-md();
 }
 
 .articleActions {
@@ -60,7 +68,9 @@
   gap: 8px;
 
   > p {
+    @include text-sm();
     color: var(--color-light-main-primary-dark-7);
+    margin: 0;
   }
 }
 
@@ -69,13 +79,16 @@
   align-items: center;
   gap: 8px;
   position: relative;
+  color: var(--color-light-main-primary-dark-10);
+  @include text-md();
 
   &:after {
+    $button-and-icon-width: 175px;
     content: "";
     height: 1px;
-    width: 213px;
+    width: calc(100% - $button-and-icon-width);
     background-color: #f0f0f0;
     position: absolute;
-    right: -20px;
+    right: -15px;
   }
 }

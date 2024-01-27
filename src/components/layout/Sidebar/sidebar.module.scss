@@ -1,3 +1,5 @@
+@import "../../../text-mixins.scss";
+
 .sidebar {
   height: 100vh;
   box-sizing: border-box;
@@ -57,6 +59,7 @@
 .expandedMenuTitle {
   padding: 24px 50px 32px 24px;
   color: var(--color-light-main-primary-dark-10);
+  @include text-sm(600);
 }
 
 .expandedMenu {
@@ -71,6 +74,7 @@
   gap: 16px;
   color: var(--color-light-main-primary-dark-6);
   padding: 0px 24px 24px 24px;
+  @include text-sm(500);
 }
 
 .expandedMenuitem {
