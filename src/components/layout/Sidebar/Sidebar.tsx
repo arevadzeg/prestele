@@ -132,6 +132,10 @@ const Sidebar = () => {
                 {subItem}
               </div>
             ))}
+            <div className={scss.info}>
+              Help Started
+              <span className={scss.version}>Version . 1.00.0.2</span>
+            </div>
           </div>
         </animated.div>
       )}
