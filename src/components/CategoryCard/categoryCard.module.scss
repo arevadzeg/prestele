@@ -1,0 +1,81 @@
+.cardContainer {
+  padding: 40px 24px;
+  border-radius: 2px;
+  border: var(--default-border);
+  // width: 100%;
+}
+
+.collectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.collectionActions {
+  display: flex;
+  gap: 16px;
+  svg {
+    cursor: pointer;
+  }
+}
+
+.collectionTitle {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.iconsWrapper {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.articleItem {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  background-color: var(--color-light-main-primary-dark-2);
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.article {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding-left: 4px;
+}
+
+.articleActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-right: 45px;
+}
+
+.addCollection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  > p {
+    color: var(--color-light-main-primary-dark-7);
+  }
+}
+
+.addCollectionButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+
+  &:after {
+    content: "";
+    height: 1px;
+    width: 213px;
+    background-color: #f0f0f0;
+    position: absolute;
+    right: -20px;
+  }
+}

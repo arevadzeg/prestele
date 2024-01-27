@@ -1,3 +1,4 @@
+import CategoryAppGrid from "../../components/layout/CategoryAppGrid/CategoryAppGrid";
 import Header from "../../components/layout/Header/Header";
 import Sidebar from "../../components/layout/Sidebar/Sidebar";
 
@@ -7,7 +8,7 @@ const CategoryApp = () => {
       <Sidebar />
       <div style={{ width: "100%" }}>
         <Header />
-        <div>asd</div>
+        <CategoryAppGrid />
       </div>
     </div>
   );
