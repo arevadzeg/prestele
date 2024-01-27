@@ -5,17 +5,26 @@ import { Button } from "antd";
 interface TestCardProps {
   url: string;
   text: string;
+  testId: string;
+  img: string;
 }
 
-const TestCard = ({ url, text }: TestCardProps) => {
+const TestCard = ({ url, text, testId, img }: TestCardProps) => {
   const navigate = useNavigate();
   const handleNavigateToApp = () => {
     navigate(url);
   };
   return (
     <div className={scss.testCard}>
-      <div className={scss.title}>{text}</div>;
-      <Button onClick={handleNavigateToApp}>Check App</Button>
+      <div className={scss.info}>
+        <div>
+          <div className={scss.testId}>Test {testId}</div>
+          <div className={scss.title}>{text}</div>
+        </div>
+        <Button onClick={handleNavigateToApp}>Case Study</Button>
+      </div>
+
+      <img src={img} />
     </div>
   );
 };
