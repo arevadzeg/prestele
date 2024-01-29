@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import CategoryApp from "./pages/CategoryApp/CategoryApp";
-import HoverAnimationApp from "./pages/HoverAnimationApp/HoverAnimationApp";
+import HoverAnimationApp from "./pages/CarouselApp/CarouselApp";
 import GraphicAnimationApp from "./pages/GraphicAnimationApp.tsx/GraphicAnimationApp";
 import MainPage from "./pages/MainPage/MainPage";
 
