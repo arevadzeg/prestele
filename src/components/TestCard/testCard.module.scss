@@ -17,6 +17,12 @@ $odd-color: #85c3ed;
   &:nth-child(even) {
     background-color: $odd-color;
   }
+
+  :global(.ant-btn-default) {
+    &:disabled {
+      color: #ffffff86;
+    }
+  }
 }
 
 .testId {

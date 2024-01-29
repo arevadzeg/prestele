@@ -10,18 +10,22 @@ const Tests = [
     id: "1",
     url: "/test1",
     component: CategoryApp,
+    img: "../../../public/test1.png",
   },
   {
-    title: "Admin Panel Manage Category Page",
+    title: "Hover animation With drag and drop",
     id: "2",
     url: "/test2",
     component: HoverAnimationApp,
+    img: "../../../public/test2.png",
   },
   {
-    title: "Admin Panel Manage Category Page",
+    title: "Graphic animation",
     id: "3",
     url: "/test3",
     component: GraphicAnimationApp,
+    disabled: true,
+    img: "../../../public/test3.png",
   },
 ];
 
@@ -29,7 +33,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<MainPage />}></Route>
+        <Route path="/" element={<MainPage tests={Tests} />}></Route>
         {Tests.map((test) => (
           <Route path={test.url} element={<test.component />} key={test.id} />
         ))}
