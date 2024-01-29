@@ -6,7 +6,11 @@ import FolderIcon from "../../assets/FolderIcon";
 import PlusIcon from "../../assets/PlusIcon";
 import scss from "./categoryCard.module.scss";
 
-const CategoryCard = () => {
+interface CategoryCardProps {
+  articleName: string;
+}
+
+const CategoryCard = ({ articleName }: CategoryCardProps) => {
   return (
     <div className={scss.cardContainer}>
       <div className={scss.collectionHeader}>
@@ -25,7 +29,7 @@ const CategoryCard = () => {
       <div className={scss.articleItem}>
         <div className={scss.article}>
           <DragIcon />
-          July Articles
+          {articleName}
         </div>
         <div className={scss.articleActions}>
           <DeleteIcon /> <EditIcon />

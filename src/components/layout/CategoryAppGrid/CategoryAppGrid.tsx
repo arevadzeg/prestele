@@ -57,9 +57,8 @@ const Grid = ({ children }: { children: ReactElement[] }) => {
     });
   }, [columns, api, bounds.width]);
 
-  // Use the correct width for each card based on the column count
   const cardStyle = {
-    width: `calc(${100 / columns}% - ${columns > 1 ? 20 : 10}px)`, // Adjust the subtraction for margin
+    width: `calc(${100 / columns}% - ${columns > 1 ? 20 : 10}px)`,
   };
 
   return (
@@ -87,12 +86,12 @@ const Grid = ({ children }: { children: ReactElement[] }) => {
 
 const App = () => {
   const cards = [
-    { asd: "asd" },
-    { asd: "asd" },
-    { asd: "asd" },
-    { asd: "asd" },
-    { asd: "asd" },
-    { asd: "asd" },
+    { articleName: "July Articles" },
+    { articleName: "July Articles" },
+    { articleName: "July Articles" },
+    { articleName: "July Articles" },
+    { articleName: "August Articles" },
+    { articleName: "August Articles" },
   ];
 
   return (
@@ -108,8 +107,8 @@ const App = () => {
       </div>
 
       <Grid>
-        {cards.map((_, index) => (
-          <CategoryCard key={index} />
+        {cards.map((card, index) => (
+          <CategoryCard key={index} articleName={card.articleName} />
         ))}
       </Grid>
     </div>
